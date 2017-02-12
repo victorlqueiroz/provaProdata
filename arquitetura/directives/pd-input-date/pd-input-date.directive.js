@@ -13,8 +13,7 @@
                 label: '@',
                 ngModel: '=',
                 ngRequired: '=',
-                colspan: '@',
-                formato: '@'
+                colspan: '@'
             },
             link: link
         };

@@ -32,7 +32,7 @@ function PdInputDateCtrl($scope) {
     $scope.toggleMin();
 
     $scope.open = function () {
-        $scope.popup1.opened = true;
+        $scope.popup.opened = true;
     };
 
     $scope.setDate = function (year, month, day) {
@@ -40,10 +40,10 @@ function PdInputDateCtrl($scope) {
     };
 
     $scope.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
-    $scope.format = $scope.formats[0];
+    $scope.format = $scope.formats[2];
     $scope.altInputFormats = ['M!/d!/yyyy'];
 
-    $scope.popup1 = {
+    $scope.popup = {
         opened: false
     };
 

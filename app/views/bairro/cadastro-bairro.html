@@ -1,0 +1,22 @@
+<div ng-controller="CadastroBairroController as vm">
+    <pd-super-crud titulo="Cadastro de bairro"
+                   service="vm.pdCrudService">
+        <div class="row">
+            <pd-input-text label="ID"
+                           ng-model="vm.pdCrudService.entidade.id">
+            </pd-input-text>
+            <pd-input-text label="Estado"
+                           ng-model="vm.pdCrudService.entidade.estado">
+            </pd-input-text>
+            <pd-input-text label="Cidade"
+                           ng-model="vm.pdCrudService.entidade.cidade">
+            </pd-input-text>
+            <pd-input-text label="Nome"
+                           ng-model="vm.pdCrudService.entidade.nome">
+            </pd-input-text>
+            <pd-input-text label="Data de Cadastro"
+                           ng-model="vm.pdCrudService.entidade.cadastro">
+            </pd-input-text>
+        </div>
+    </pd-super-crud>
+</div>

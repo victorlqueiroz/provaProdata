@@ -26,9 +26,20 @@
     <!---->
 
     <script src="app/config/pd-app.module.js"></script>
+    <script src="app/controller/index.controller.js"></script>
+
+    <script src="arquitetura/directives/pd-input-text/pd-input-text.directive.js"></script>
+    <script src="arquitetura/directives/pd-input-date/pd-input-date.directive.js"></script>
+    <script src="arquitetura/directives/pd-input-date/pd-input-date.controller.js"></script>
+    <script src="arquitetura/directives/pd-select/pd-select.directive.js"></script>
+
 
 </head>
-<body>
-
+<body ng-controller="IndexController as vm">
+    <form name="form">
+        <pd-input-text label="teste" ng-model="vm.entidade.teste"></pd-input-text>
+        <pd-input-date label="data"></pd-input-date>
+        <pd-select label="select"></pd-select>
+    </form>
 </body>
 </html>

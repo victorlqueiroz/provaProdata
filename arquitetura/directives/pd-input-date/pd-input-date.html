@@ -1,4 +1,4 @@
-<div ng-class="::classColspan">
+<div ng-class="::classColspan" ng-controller="PdInputDateCtrl">
     <div class="form-group" ng-class="{'has-error': formCtrl[inputName].$invalid && formCtrl[inputName].$touched}">
         <div class="form-group">
             <label>
@@ -7,7 +7,7 @@
                 <i class="fa fa-asterisk text-danger" ng-if="ngRequired"></i>
             </label>
             <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="ngModel"
-                   is-open="popup1.opened" datepicker-options="dateOptions" ng-required="ngRequired" close-text="Close"
+                   is-open="popup.opened" datepicker-options="dateOptions" ng-required="ngRequired"
                    alt-input-formats="altInputFormats"/>
             <span class="input-group-btn">
             <button type="button" class="btn btn-default" ng-click="open()"><i
