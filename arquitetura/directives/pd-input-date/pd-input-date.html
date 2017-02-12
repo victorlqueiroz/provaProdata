@@ -1,0 +1,22 @@
+<div ng-class="::classColspan">
+    <div class="form-group" ng-class="{'has-error': formCtrl[inputName].$invalid && formCtrl[inputName].$touched}">
+        <div class="form-group">
+            <label>
+                <label class="control-label" ng-bind="label">
+                </label>
+                <i class="fa fa-asterisk text-danger" ng-if="ngRequired"></i>
+            </label>
+            <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="ngModel"
+                   is-open="popup1.opened" datepicker-options="dateOptions" ng-required="ngRequired" close-text="Close"
+                   alt-input-formats="altInputFormats"/>
+            <span class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="open()"><i
+                    class="glyphicon glyphicon-calendar"></i></button>
+          </span>
+            <div ng-messages="formCtrl[inputName].$error"
+                 ng-if="(formCtrl[inputName].$invalid && formCtrl[inputName].$touched)">
+                <div ng-messages-include="arquitetura/template/ng-messages.html"></div>
+            </div>
+        </div>
+    </div>
+</div>
